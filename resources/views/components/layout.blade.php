@@ -46,6 +46,13 @@
                     >
                 </li>
 
+                <form class="inline" method="POST" action="/logout">
+                    @csrf 
+                    <button type="submit">
+                        <i class="fa-solide fa-door-closed"></i>
+                        logout
+                    </button>
+                </form>
                 @else
                 <li>
                     <a href="/register" class="hover:text-laravel"
